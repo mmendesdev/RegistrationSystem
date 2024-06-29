@@ -4,7 +4,7 @@ from django.db import models
 #preciso dá um comando = python manage.py makemigrations para tranformar minha class em sql
 #logo depois um = python manage.py migrate , para pegr pegar as migrations e apliar no banco de dados
 
-class Business(models.Model):
+class Businness(models.Model):
     Falseid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     social_name = models.CharField(max_length=500) #nome da empresa
     cnpj = models.CharField(max_length=14)
