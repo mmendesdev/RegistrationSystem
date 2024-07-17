@@ -1,10 +1,12 @@
-from businness import models
 from django.contrib import admin
 
+from businness import models
 
-#criando adminn de Businnes 
+
+# criando adminn de Businnes
 class BusinnessAdmin(admin.ModelAdmin):
-     list_filter = ('is_active',)
+    list_filter = ("is_active",)
 
-#registar no admin do dajngo
+
+# registar no admin do dajngo
 admin.site.register(models.Businness, BusinnessAdmin)
